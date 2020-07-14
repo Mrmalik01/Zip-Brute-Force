@@ -5,6 +5,10 @@ A tool to run brute force attack on any zip file by using a given wordlist (only
 ## Installation and Usage
 
 ```bash
+# Clone the repository
+git init
+git clone https://github.com/Mrmalik01/zip-brute-force.git
+
 # Install the required libraries
 pip install -r requirements.txt
 ```
