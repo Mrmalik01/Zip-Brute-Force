@@ -45,10 +45,9 @@ class ZipBruteForce:
         
     def start(self):
         self.banner()
+        zip_file = zipfile.ZipFile(self.target_file)
         with open(self.wordlist, "rb") as wordlist:
-            counter = 0
             for word in tqdm(wordlist, total=self.total_words, unit="word"):
-                counter +=1
                 try:
                     zip_file.extractall(pwd=word.strip())
                 except:
@@ -71,7 +70,7 @@ class ZipBruteForce:
 [-----]          """+wi+"""   AUTHOR - KHIZAR MALIK  """+gr+"""     [-----]
 [-----] """+wi+"""     EMAIL - khizarmalik.ai@gmail.com  """+gr+""" [-----]
 =======================================================
-[-----]          """+wi+"""   CONFIG  """+gr+"""                    [-----]
+[-----]          """+wi+"""       CONFIG  """+gr+"""                [-----]
 =======================================================
 [>] Target                :> """+wi+str(self.target_file)+gr+"""
 [>] Wordlist              :> """+wi+str(self.wordlist)+gr+"""
