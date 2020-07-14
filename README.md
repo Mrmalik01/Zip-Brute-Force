@@ -1,5 +1,5 @@
 ## Zip Brute Force Tool
-![image](images/tool.png "Tool")
+![image](images/tool.png "Tool")  
 A tool to run brute force attack on any zip file by using a given wordlist (only for educational purpose).
 
 ## Installation and Usage
