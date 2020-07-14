@@ -110,9 +110,11 @@ def Main():
         
     if option.tarfile is None:
         print(error_message("Target file is not passed"))
+        print(parse.usage)
         sys.exit(1)
     if option.wrdlst is None:
         print(error_message("Wordlist file is not passed"))
+        print(parse.usage)
         sys.exit(1)
         
     attack = ZipBruteForce(option.tarfile, option.wrdlst)
